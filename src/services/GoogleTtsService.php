@@ -45,6 +45,6 @@
             $comando = "vlc \"$caminhoArquivo\"";
 
             shell_exec($comando);
-            shell_exec('del news.mp3');
+            shell_exec('del' . __DIR__ .  '/../../news.mp3');
         }
     }
